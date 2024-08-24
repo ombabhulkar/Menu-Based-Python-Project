@@ -1,0 +1,12 @@
+from pymongo import MongoClient
+
+def connect_to_mongodb():
+    client = MongoClient('mongodb+srv://babhulkarom09:<db_password>@menubasedprojectcluster.qo26t.mongodb.net/?retryWrites=true&w=majority&appName=MenubasedprojectCluster')
+    db = client['MenubasedprojectCluster']
+    return db
+
+def lambda_handler(event, context):
+    db = connect_to_mongodb()
+    collection = db['6']
+    
+    print("Connected to MongoDB and performed operations.")
