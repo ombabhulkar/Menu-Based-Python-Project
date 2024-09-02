@@ -19,7 +19,7 @@ This project is a Python application that integrates with various AWS services t
 
 ### Prerequisites
 
-- **Python 3.x**
+- **Python 3.9**
 - **AWS Account** (with appropriate permissions for EC2, S3, Lambda, SES, and Transcribe services)
 - **Boto3 Library:** Install using `pip install boto3`
 
